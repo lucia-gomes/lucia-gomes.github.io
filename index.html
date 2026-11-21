@@ -1322,7 +1322,42 @@ body>footer .copyright{font-size:10px!important;line-height:12px!important;margi
 #teaching .teaching-photo{margin:0;min-width:0}
 #teaching .teaching-photo img{display:block;width:100%;height:310px;object-fit:cover;object-position:center center;border-radius:12px}
 @media(max-width:760px){#teaching .teaching-photo-hero{grid-template-columns:1fr;gap:18px}#teaching .teaching-photo img{height:auto;max-height:340px;object-fit:cover}}
-</style></head>
+</style><style id="mobile-responsive-final">
+/* Exclusively mobile: desktop styles remain unchanged. */
+@media (max-width:700px){
+ html{min-height:100%;background:#fff!important}
+ body{min-height:100dvh!important;display:flex!important;flex-direction:column!important;overflow-x:hidden!important;background:#fff!important}
+ body>header.hero-head{flex:0 0 auto!important;padding:17px 16px 16px!important;border-radius:0!important}
+ .institution{font-size:clamp(10px,2.8vw,12px)!important;letter-spacing:.025em!important}
+ .institution-university,.institution-faculty{white-space:normal!important;line-height:1.35!important}
+ .hero-head h1{font-size:clamp(27px,7vw,35px)!important;margin:9px 0 4px!important}
+ .role{font-size:13px!important}.motto{font-size:clamp(15px,4vw,18px)!important;margin-top:8px!important}
+ .field{font-size:12px!important;margin-top:3px!important}
+ .lang-switch{margin-bottom:9px!important;gap:8px!important}
+ body>.wrap:not(.content-panels){width:100%!important;max-width:100%!important;padding:0 14px!important;flex:0 0 auto!important;min-height:0!important;display:block!important}
+ .mosaic,body>.wrap .mosaic{display:grid!important;grid-template-columns:43% minmax(0,1fr)!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;height:clamp(245px,76vw,340px)!important;min-height:0!important;gap:6px!important;margin:12px 0!important;flex:none!important}
+ .mosaic img{height:100%!important;width:100%!important;object-fit:cover!important}
+ .portrait-frame{grid-row:1/span 2!important;min-height:0!important}
+ .signature{font-size:clamp(13px,3.6vw,18px)!important;bottom:12px!important;right:4px!important}
+ .nav,body>.wrap .nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin:10px 0 16px!important}
+ .nav a{min-width:0!important;width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:48px!important;padding:10px 5px!important;font-size:clamp(12px,3.3vw,14px)!important;line-height:1.25!important}
+ body>.wrap .institutional-logos,.institutional-logos{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px 14px!important;padding:4px 8px!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0 auto 8px!important}
+ body>.wrap .institutional-logos>a,.institutional-logos>a{min-height:52px!important;height:52px!important;max-height:52px!important;padding:3px!important}
+ body>.wrap .institutional-logos>a img,.institutional-logos>a img{max-width:95%!important;max-height:46px!important;width:auto!important;height:auto!important}
+ body>main.content-panels{width:100%!important;min-width:0!important;flex:0 0 auto!important}
+ main section{padding:25px 0 30px!important}
+ main section .wrap{padding-left:16px!important;padding-right:16px!important}
+ h2{font-size:clamp(25px,7vw,31px)!important;overflow-wrap:anywhere}
+ .lead{font-size:16px!important;line-height:1.6!important}
+ .grid2,.science-grid,.teaching-levels{grid-template-columns:minmax(0,1fr)!important}
+ .item{min-width:0!important;padding:17px!important}
+ img{max-width:100%}
+ body>footer{display:block!important;flex:0 0 auto!important;min-height:0!important;height:auto!important;margin-top:auto!important;padding:8px 0 12px!important;background:#fff!important}
+ body>footer .copyright{font-size:10px!important;line-height:1.5!important;text-align:center!important}
+}
+@media (max-width:360px){.nav a{font-size:12px!important}.mosaic,body>.wrap .mosaic{height:245px!important}}
+</style>
+</head>
 <body>
 <header class="hero-head" id="home"><div aria-label="Language / Idioma" class="lang-switch" role="group"><input checked="" id="lang-en" name="site-language" type="radio"/><label aria-label="English" for="lang-en" lang="en" tabindex="0" title="English">🇬🇧</label><input id="lang-pt" name="site-language" type="radio"/><label aria-label="Português de Portugal" for="lang-pt" lang="pt-PT" tabindex="0" title="Português (Portugal)">🇵🇹</label></div>
 <div class="institution"><span class="institution-university">Universidade Lusófona</span><span class="institution-faculty">Faculdade de Educação Física e Desporto</span></div>
